@@ -1,3 +1,27 @@
 [gd_scene format=3 uid="uid://cxpfadprb6ab4"]
 
-[node name="Node2D" type="Node2D" unique_id=1887916717]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78qe6"]
+size = Vector2(44, 45)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=366719068]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1253126693]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Area2D" type="Area2D" parent="." unique_id=360785387]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=959990921]
+position = Vector2(20, 20.5)
+shape = SubResource("RectangleShape2D_78qe6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=142000866]
+position = Vector2(20, 20.5)
+shape = SubResource("RectangleShape2D_78qe6")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=2099839371]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=467173385]
+position = Vector2(49, 21)
+shape = SubResource("RectangleShape2D_78qe6")
+debug_color = Color(0.99552435, 5.7997554e-06, 1.540184e-06, 0.41960785)
