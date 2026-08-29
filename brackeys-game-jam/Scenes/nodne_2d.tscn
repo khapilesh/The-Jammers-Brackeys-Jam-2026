@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b4yutl86tdnap"]
 
 [ext_resource type="PackedScene" uid="uid://cxpfadprb6ab4" path="res://Scenes/node_2d.tscn" id="1_v7oj7"]
+[ext_resource type="PackedScene" uid="uid://b663k1tia5fnw" path="res://Scenes/a.tscn" id="2_u6vkt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_78qe6"]
 size = Vector2(248.5, 54)
@@ -83,3 +84,6 @@ shape = SubResource("RectangleShape2D_78qe6")
 position = Vector2(103, 226)
 collision_layer = 3
 collision_mask = 3
+
+[node name="A" parent="player" unique_id=1165241540 instance=ExtResource("2_u6vkt")]
+position = Vector2(114, 81)
