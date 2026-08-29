@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://k26bm2km1dbp"]
+
+[ext_resource type="Texture2D" uid="uid://ck477nvue3a5e" path="res://Assets/settingsbtn.png" id="1_1gga5"]
+[ext_resource type="Script" uid="uid://bfumq22w1j1fl" path="res://Scripts/maiin_menu.gd" id="1_aldqs"]
+[ext_resource type="Texture2D" uid="uid://h730jj4br2ic" path="res://Assets/fightbtn.png" id="1_ctmos"]
+[ext_resource type="Texture2D" uid="uid://0lwluyh64ign" path="res://Assets/quitbtn.png" id="2_aldqs"]
+
+[node name="Maiin menu" type="Control" unique_id=743781948]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aldqs")
+
+[node name="Button" type="Button" parent="." unique_id=830651881]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 102.0
+offset_right = 338.0
+offset_bottom = 134.0
+icon = ExtResource("1_ctmos")
+flat = true
+autowrap_trim_flags = 0
+clip_text = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="." unique_id=285707819]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 214.0
+offset_right = 341.0
+offset_bottom = 256.0
+icon = ExtResource("2_aldqs")
+flat = true
+autowrap_trim_flags = 0
+clip_text = true
+expand_icon = true
+
+[node name="Button3" type="Button" parent="." unique_id=1824660053]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 159.0
+offset_right = 341.0
+offset_bottom = 196.0
+icon = ExtResource("1_1gga5")
+flat = true
+autowrap_trim_flags = 0
+icon_alignment = 1
+expand_icon = true
+
+[node name="Label" type="Label" parent="." unique_id=582754403]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 36.0
+offset_right = 347.0
+offset_bottom = 85.0
+text = "Game Name
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
