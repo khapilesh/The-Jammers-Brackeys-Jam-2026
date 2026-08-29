@@ -3,13 +3,16 @@
 [ext_resource type="Script" uid="uid://c5pkmigy46iaa" path="res://Scripts/a.gd" id="1_13bpg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_78qe6"]
-size = Vector2(21, 22)
+size = Vector2(31.5, 34)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rresx"]
+size = Vector2(95, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cr6yu"]
+size = Vector2(116, 83)
 
 [node name="A" type="CharacterBody2D" unique_id=1165241540 groups=["player"]]
+motion_mode = 1
 script = ExtResource("1_13bpg")
 
 [node name="Label" type="Label" parent="." unique_id=410880971]
@@ -20,18 +23,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1209545423]
-position = Vector2(10, 11)
+position = Vector2(8, 12)
 shape = SubResource("RectangleShape2D_78qe6")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=658900313]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=435956167]
-position = Vector2(10, 11)
+position = Vector2(8.5, 12)
 shape = SubResource("RectangleShape2D_rresx")
 
 [node name="Area2D2" type="Area2D" parent="." unique_id=1053178682]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D2" unique_id=1916501184]
-position = Vector2(10, 11)
+position = Vector2(17, 11)
 shape = SubResource("RectangleShape2D_cr6yu")
 debug_color = Color(0.7476475, 0.46179736, 7.70092e-07, 0.41960785)
